@@ -5,7 +5,6 @@ public class Solution {
         //记录magazine 中每个字符到哈希表中
         for (int i = 0; i < magazine.length(); i++) {
             arr[magazine.charAt(i)-'a']++;
-
         }
         for (int i = 0; i < ransomNote.length(); i++) {
 
@@ -14,7 +13,6 @@ public class Solution {
             }else {
                 return false;
             }
-
         }
         return true;
 

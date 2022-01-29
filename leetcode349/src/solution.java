@@ -1,6 +1,6 @@
 import java.util.HashSet;
 import java.util.Set;
-
+//hashset是一个不允许有重复元素的集合
 public class solution {
     public int[] intersection(int[] nums1, int[] nums2) {
         if (nums1.length == 0 || nums2.length == 0)
@@ -10,7 +10,6 @@ public class solution {
         //遍历数组num1,记录hash表中
         for (int i : nums1) {
             set1.add(i);
-
         }
         //遍历数组num2，判断两个个表的相同元素,将相同的元素加入set2
         for (int i :nums2) {
@@ -23,9 +22,7 @@ public class solution {
             int index = 0;
         for (int j : set2){
                 arr[index++] = j;
-
             }
-
         return arr;
     }
 }
