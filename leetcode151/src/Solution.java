@@ -27,5 +27,23 @@ public class Solution {
             return new String(newArr,0,newArrPos-1);
         }
     }
+    public String reverseWords2(String s) {
+        // 除去开头和末尾的空白字符
+        s = s.trim();
+        //分割字符串
+        String[] res = s.split("\\s+");
+        StringBuffer sb = new StringBuffer();
+        for (int i=res.length-1;i>=0;i--) {
+
+            if (i!=0) {
+                sb.append(res[i] + " ");
+            }else {
+                sb.append(res[i]);
+            }
+        }
+     String str = sb.toString();
+     return str;
+
+    }
 
 }

@@ -37,7 +37,6 @@ public class Solution {
                     right--;
                 }
             }
-
         }
         return res;
 
