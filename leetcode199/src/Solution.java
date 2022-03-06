@@ -16,6 +16,7 @@ public class Solution {
             int len = queue.size();
             for (int i = 0; i < len; i++) {
                 TreeNode node = queue.poll();
+                //取每层的最后一个出栈元素
                 if (i==len-1){
                     ans.add(node.val);
                 }
